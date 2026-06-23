@@ -39,7 +39,7 @@
     font-size: 15px;
   }
 
-  /* NAV */
+  /* ── NAV ── */
   nav {
     position: fixed; top: 0; left: 0; right: 0; z-index: 100;
     background: rgba(255,255,255,0.92);
@@ -68,7 +68,7 @@
   }
   .nav-links a:hover { color: var(--blue); }
 
-  /* SECTIONS */
+  /* ── SECTIONS ── */
   section { padding: 48px 2rem; }
   .container { max-width: 1100px; margin: 0 auto; }
   .section-label {
@@ -83,7 +83,7 @@
     margin-bottom: 1.5rem;
   }
 
-  /* HERO */
+  /* ── HERO ── */
   #hero {
     padding-top: 90px; padding-bottom: 60px;
     background: var(--white);
@@ -176,7 +176,7 @@
     font-size: 12px; color: var(--gray-600);
   }
 
-  /* ABOUT */
+  /* ── ABOUT ── */
   #about { background: var(--gray-50); border-top: 1px solid var(--gray-200); border-bottom: 1px solid var(--gray-200); }
   .about-grid {
     display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start;
@@ -203,7 +203,7 @@
     font-size: 13px; color: var(--gray-700);
   }
 
-  /* SKILLS */
+  /* ── SKILLS ── */
   #skills { background: var(--white); }
   .skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; }
   .skill-card {
@@ -226,7 +226,7 @@
     border-radius: 4px; padding: 3px 8px; font-size: 11px; color: var(--gray-600);
   }
 
-  /* CAREER */
+  /* ── CAREER ── */
   #career { background: var(--gray-50); border-top: 1px solid var(--gray-200); border-bottom: 1px solid var(--gray-200); }
   .timeline { display: flex; flex-direction: column; gap: 0; }
   .timeline-item {
@@ -248,12 +248,6 @@
     font-size: 11px; font-weight: 600;
     padding: 3px 10px; border-radius: 20px;
   }
-  .timeline-badge-green {
-    display: inline-block;
-    background: #dcfce7; color: #16a34a;
-    font-size: 11px; font-weight: 600;
-    padding: 3px 10px; border-radius: 20px;
-  }
   .timeline-company {
     font-size: 18px; font-weight: 700; color: var(--gray-900);
     margin-bottom: 4px;
@@ -268,30 +262,8 @@
     background: var(--white); border: 1px solid var(--gray-200);
     border-radius: 4px; padding: 2px 8px; font-size: 11px; color: var(--gray-600);
   }
-  .achievement-box {
-    background: var(--blue-light);
-    border-left: 3px solid var(--blue);
-    border-radius: 0 8px 8px 0;
-    padding: 12px 16px;
-    margin: 10px 0 12px;
-  }
-  .achievement-box p {
-    font-size: 13px; font-weight: 600;
-    color: var(--blue-dark); line-height: 1.7; margin: 0;
-  }
-  .freelance-box {
-    background: #f0fdf4;
-    border: 1px solid #bbf7d0;
-    border-radius: 10px;
-    padding: 12px 16px;
-    margin: 10px 0 12px;
-  }
-  .freelance-box p {
-    font-size: 13px; font-weight: 600;
-    color: #15803d; line-height: 1.7; margin: 0;
-  }
 
-  /* PORTFOLIO */
+  /* ── PORTFOLIO ── */
   #portfolio { background: var(--white); }
   .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 1.5rem; }
   .portfolio-card {
@@ -320,14 +292,6 @@
   }
   .portfolio-title { font-size: 16px; font-weight: 600; color: var(--gray-900); margin-bottom: 0.5rem; }
   .portfolio-desc { font-size: 13px; color: var(--gray-500); line-height: 1.6; margin-bottom: 1rem; }
-  .portfolio-stat {
-    background: var(--blue-light);
-    border-radius: 6px;
-    padding: 8px 12px;
-    margin-bottom: 10px;
-    font-size: 12px; font-weight: 600;
-    color: var(--blue-dark); line-height: 1.6;
-  }
   .portfolio-chips { display: flex; flex-wrap: wrap; gap: 6px; }
   .portfolio-chip {
     background: var(--gray-50); border: 1px solid var(--gray-200);
@@ -337,9 +301,12 @@
     text-align: center; margin-top: 2.5rem;
   }
 
-  /* CONTACT */
+  /* ── CONTACT ── */
   #contact { background: var(--gray-50); border-top: 1px solid var(--gray-200); }
+  .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+  .contact-info-title { font-size: 22px; font-weight: 700; color: var(--gray-900); margin-bottom: 0.5rem; }
   .contact-info-sub { font-size: 15px; color: var(--gray-500); margin-bottom: 2rem; line-height: 1.6; }
+  .contact-items { display: flex; flex-direction: column; gap: 1rem; }
   .contact-item {
     display: flex; align-items: center; gap: 14px;
     background: var(--white); border: 1px solid var(--gray-200);
@@ -353,8 +320,24 @@
   }
   .contact-item-label { font-size: 12px; color: var(--gray-500); margin-bottom: 2px; }
   .contact-item-value { font-size: 15px; font-weight: 500; color: var(--gray-800); }
+  .contact-form { background: var(--white); border: 1px solid var(--gray-200); border-radius: 16px; padding: 2rem; }
+  .form-group { margin-bottom: 1.25rem; }
+  .form-group label { display: block; font-size: 13px; font-weight: 500; color: var(--gray-700); margin-bottom: 6px; }
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    border: 1.5px solid var(--gray-200);
+    border-radius: 8px; padding: 10px 14px;
+    font-size: 14px; font-family: var(--font-kr);
+    color: var(--gray-800); background: var(--gray-50);
+    outline: none; transition: border-color 0.2s;
+    resize: vertical;
+  }
+  .form-group input:focus,
+  .form-group textarea:focus { border-color: var(--blue); background: var(--white); }
+  .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
 
-  /* FOOTER */
+  /* ── FOOTER ── */
   footer {
     background: var(--gray-900); color: var(--gray-400);
     text-align: center; padding: 2rem;
@@ -362,7 +345,7 @@
   }
   footer span { color: var(--gray-500); }
 
-  /* ANIMATIONS */
+  /* ── ANIMATIONS ── */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(24px); }
     to   { opacity: 1; transform: translateY(0); }
@@ -373,11 +356,12 @@
   .delay-3 { animation-delay: 0.3s; }
   .delay-4 { animation-delay: 0.4s; }
 
-  /* RESPONSIVE */
+  /* ── RESPONSIVE ── */
   @media (max-width: 900px) {
     .hero-grid { grid-template-columns: 1fr; }
     .hero-card { display: none; }
     .about-grid { grid-template-columns: 1fr; gap: 2rem; }
+    .contact-grid { grid-template-columns: 1fr; gap: 2rem; }
     .timeline-item { grid-template-columns: 1fr; gap: 0.5rem; }
     .nav-links { display: none; }
   }
@@ -385,6 +369,7 @@
     section { padding: 36px 1.25rem; }
     .portfolio-grid { grid-template-columns: 1fr; }
     .skills-grid { grid-template-columns: 1fr; }
+    .form-row { grid-template-columns: 1fr; }
   }
 </style>
 </head>
@@ -411,10 +396,9 @@
       <div>
         <div class="hero-eyebrow fade-up">E-Commerce Specialist</div>
         <h1 class="hero-name fade-up delay-1">이경호</h1>
-        <p class="hero-role fade-up delay-2">AI 활용 커머스 마케터 · 전환율 최적화 전문가</p>
+        <p class="hero-role fade-up delay-2">Designer · Marketer · Operator</p>
         <p class="hero-desc fade-up delay-3">
-          쇼핑몰 기획부터 디자인, HTML 코딩, 키워드 광고 운영까지 — 온라인 커머스의 전 과정을 직접 설계하고 실행합니다.<br>
-          AI를 활용한 SEO·카피라이팅으로 <strong>구매전환율 4배 상승</strong>을 실현한 실무형 전문가입니다.
+          쇼핑몰 기획부터 디자인, HTML 코딩, 키워드 광고 운영까지 — 온라인 커머스의 전 과정을 직접 설계하고 실행합니다. 포토샵 기반 상세페이지 제작과 AI 활용 카피라이팅으로 구매전환율을 높이는 실무형 전문가입니다.
         </p>
         <div class="hero-btns fade-up delay-4">
           <a href="#portfolio" class="btn-primary">포트폴리오 보기</a>
@@ -425,25 +409,26 @@
         <p class="hero-card-title">Summary</p>
         <div class="stat-grid">
           <div class="stat-item">
-            <div class="stat-num">18<span>년+</span></div>
+            <div class="stat-num">15<span>년+</span></div>
             <div class="stat-label">실무 경력</div>
           </div>
           <div class="stat-item">
-            <div class="stat-num">4<span>배↑</span></div>
+            <div class="stat-num">40<span>%↑</span></div>
             <div class="stat-label">전환율 향상</div>
           </div>
           <div class="stat-item">
-            <div class="stat-num">30<span>종+</span></div>
-            <div class="stat-label">카페24 템플릿</div>
+            <div class="stat-num">5<span>개+</span></div>
+            <div class="stat-label">운영 채널</div>
           </div>
           <div class="stat-item">
-            <div class="stat-num">5<span>천+</span></div>
-            <div class="stat-label">연 매출(만원)</div>
+            <div class="stat-num">3<span>종+</span></div>
+            <div class="stat-label">솔루션 경험</div>
           </div>
         </div>
         <div class="hero-tags">
           <span class="hero-tag">카페24</span>
           <span class="hero-tag">스마트스토어</span>
+          <span class="hero-tag">쿠팡 로켓배송</span>
           <span class="hero-tag">네이버 광고</span>
           <span class="hero-tag">Photoshop</span>
           <span class="hero-tag">HTML/CSS</span>
@@ -462,7 +447,7 @@
         <p class="section-label">About Me</p>
         <h2 class="section-title">온라인 쇼핑몰을<br>처음부터 끝까지 만듭니다</h2>
         <p>단순한 디자이너도, 개발자도 아닙니다. 쇼핑몰의 기획 의도를 이해하고, 소비자의 구매 심리를 반영한 상세페이지를 직접 설계·제작합니다.</p>
-        <p>카페24 스마트디자인 기반의 HTML/CSS 코딩부터 네이버 키워드 광고 운영, AI를 활용한 SEO 최적화와 카피라이팅까지 — 온라인 커머스의 전 사이클을 한 사람이 담당합니다.</p>
+        <p>카페24 스마트디자인 기반의 HTML/CSS 코딩부터 네이버 키워드 광고 운영, AI를 활용한 카피라이팅까지 — 온라인 커머스의 전 사이클을 한 사람이 담당합니다.</p>
         <ul class="contact-list">
           <li>
             <div class="contact-icon">📞</div>
@@ -491,7 +476,6 @@
             <span class="tool-tag">스마트스토어</span>
             <span class="tool-tag">쿠팡 Wing</span>
             <span class="tool-tag">고도몰</span>
-            <span class="tool-tag">ChatGPT</span>
             <span class="tool-tag">Google Gemini</span>
             <span class="tool-tag">Claude AI</span>
             <span class="tool-tag">오픈마켓 관리</span>
@@ -503,13 +487,13 @@
           <div class="tool-grid">
             <span class="tool-tag">쇼핑몰 디자인 · 코딩</span>
             <span class="tool-tag">상세페이지 제작</span>
-            <span class="tool-tag">AI SEO 최적화</span>
             <span class="tool-tag">이벤트 페이지</span>
             <span class="tool-tag">편집 디자인</span>
             <span class="tool-tag">카탈로그 제작</span>
             <span class="tool-tag">키워드 광고 운영</span>
             <span class="tool-tag">AI 카피라이팅</span>
             <span class="tool-tag">다채널 운영</span>
+            <span class="tool-tag">쿠팡 로켓배송 발주업무</span>
           </div>
         </div>
       </div>
@@ -526,7 +510,7 @@
       <div class="skill-card">
         <div class="skill-icon">🎨</div>
         <div class="skill-name">쇼핑몰 디자인 & 코딩</div>
-        <div class="skill-desc">카페24 스마트디자인 기반 PC·모바일 반응형 쇼핑몰 제작. HTML/CSS/jQuery로 직접 구현. 카페24 디자인센터 템플릿 30종+ 제작·판매.</div>
+        <div class="skill-desc">카페24 스마트디자인 기반 PC·모바일 반응형 쇼핑몰 제작. HTML/CSS/jQuery로 직접 구현.</div>
         <div class="skill-tags">
           <span class="skill-tag">카페24</span>
           <span class="skill-tag">HTML</span>
@@ -537,7 +521,7 @@
       <div class="skill-card">
         <div class="skill-icon">📸</div>
         <div class="skill-name">상세페이지 기획 & 제작</div>
-        <div class="skill-desc">포토샵 기반 이미지 작업부터 AI 카피라이팅·스토리텔링 구조 설계까지. 구매전환율 6개월 평균 13.38% 달성 (업계 평균 3~6배).</div>
+        <div class="skill-desc">포토샵 기반 이미지 작업부터 AI 카피라이팅까지. 구매전환율 최적화 중심의 상세페이지 설계.</div>
         <div class="skill-tags">
           <span class="skill-tag">Photoshop</span>
           <span class="skill-tag">AI 카피</span>
@@ -545,20 +529,9 @@
         </div>
       </div>
       <div class="skill-card">
-        <div class="skill-icon">🤖</div>
-        <div class="skill-name">AI 활용 SEO & 마케팅</div>
-        <div class="skill-desc">ChatGPT·Gemini·Claude 조합으로 키워드 SEO 최적화. 광고비 추가 없이 네이버 쇼핑 검색 순위 8페이지→5페이지 진입 달성.</div>
-        <div class="skill-tags">
-          <span class="skill-tag">ChatGPT</span>
-          <span class="skill-tag">Gemini</span>
-          <span class="skill-tag">Claude</span>
-          <span class="skill-tag">SEO</span>
-        </div>
-      </div>
-      <div class="skill-card">
         <div class="skill-icon">📢</div>
         <div class="skill-name">네이버 키워드 광고</div>
-        <div class="skill-desc">검색광고 기획·운영·분석. ROAS 개선을 위한 키워드 전략 수립 및 입찰 최적화. 광고 역마진 구조를 순마진으로 전환한 실적 보유.</div>
+        <div class="skill-desc">검색광고 기획·운영·분석. ROAS 개선을 위한 키워드 전략 수립 및 입찰 최적화.</div>
         <div class="skill-tags">
           <span class="skill-tag">검색광고</span>
           <span class="skill-tag">ROAS</span>
@@ -568,10 +541,11 @@
       <div class="skill-card">
         <div class="skill-icon">🛒</div>
         <div class="skill-name">다채널 쇼핑몰 운영</div>
-        <div class="skill-desc">자사몰, 스마트스토어, 쿠팡, G마켓, 고도몰 등 멀티채널 상품관리 및 운영. 쿠팡 로켓배송 발주·라벨·패키지 실무 경험.</div>
+        <div class="skill-desc">자사몰, 스마트스토어, 쿠팡, G마켓, 고도몰 등 멀티채널 상품관리·운영. 쿠팡 로켓배송 발주 확인, 라벨 제작, 패키지 업무 포함.</div>
         <div class="skill-tags">
           <span class="skill-tag">스마트스토어</span>
           <span class="skill-tag">쿠팡</span>
+          <span class="skill-tag">로켓배송 발주</span>
           <span class="skill-tag">오픈마켓</span>
           <span class="skill-tag">고도몰</span>
         </div>
@@ -579,7 +553,7 @@
       <div class="skill-card">
         <div class="skill-icon">📄</div>
         <div class="skill-name">편집 디자인 & 카탈로그</div>
-        <div class="skill-desc">Adobe InDesign을 활용한 제품 카탈로그, 브로셔, 리플렛 등 인쇄물 편집 디자인 전반 담당.</div>
+        <div class="skill-desc">Adobe InDesign을 활용한 제품 카탈로그, 브로셔, 리플렛 등 인쇄물 편집 디자인.</div>
         <div class="skill-tags">
           <span class="skill-tag">InDesign</span>
           <span class="skill-tag">카탈로그</span>
@@ -587,9 +561,19 @@
         </div>
       </div>
       <div class="skill-card">
+        <div class="skill-icon">🤖</div>
+        <div class="skill-name">AI 활용 마케팅</div>
+        <div class="skill-desc">Google Gemini, Claude 등 생성형 AI를 활용한 타겟 분석, 광고 카피 및 콘텐츠 제작.</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Gemini</span>
+          <span class="skill-tag">Claude AI</span>
+          <span class="skill-tag">콘텐츠 기획</span>
+        </div>
+      </div>
+      <div class="skill-card">
         <div class="skill-icon">💻</div>
         <div class="skill-name">AI 협업 앱 개발</div>
-        <div class="skill-desc">Claude와 협업한 웹앱 기획·개발. 단일 HTML 파일 기반 PWA를 GitHub Pages / Vercel에 직접 배포. 5개 앱 운영 중.</div>
+        <div class="skill-desc">Claude 디자인 및 Claude Code를 활용한 웹앱 기획·개발. 단일 HTML 파일 기반 PWA를 GitHub Pages / Vercel에 직접 배포.</div>
         <div class="skill-tags">
           <span class="skill-tag">Claude Code</span>
           <span class="skill-tag">HTML/CSS/JS</span>
@@ -615,20 +599,15 @@
           <span class="timeline-badge">재직 중</span>
         </div>
         <div class="timeline-right">
-          <p class="timeline-company">㈜ 이미지골프</p>
-          <p class="timeline-role">온라인 커머스 팀장</p>
-          <p class="timeline-desc">자사몰 및 오픈마켓 다채널 상품관리·운영. 상세페이지 기획·제작, 키워드 광고 운영. 쿠팡 로켓배송 업무(발주 확인, 라벨 제작, 패키지) 담당. AI를 활용한 SEO 최적화 및 상세페이지 개편 주도.</p>
-          <div class="achievement-box">
-            <p>🎯 AI 활용 상세페이지 전면 개편 → 구매전환율 6개월 평균 <strong>13.38%</strong> 달성 (개편 전 대비 약 4배 상승)</p>
-            <p>📈 ChatGPT·Gemini·Claude 조합 SEO 최적화 → 네이버 쇼핑 <strong>8페이지 → 5페이지</strong> 진입 (광고비 추가 없음)</p>
-            <p>💰 전환비용 절감으로 광고 <strong>역마진 → 순마진 구조</strong>로 전환</p>
-          </div>
+          <p class="timeline-company">㈜ 이미지XX</p>
+          <p class="timeline-role">온라인 커머스 담당</p>
+          <p class="timeline-desc">자사몰 및 오픈마켓 다채널 상품관리·운영. 상세페이지 기획·제작, 키워드 광고 운영. 쿠팡 로켓배송 업무(발주 확인, 라벨 제작, 패키지) 담당.</p>
           <div class="timeline-chips">
             <span class="timeline-chip">다채널 운영</span>
             <span class="timeline-chip">상세페이지</span>
-            <span class="timeline-chip">AI SEO</span>
             <span class="timeline-chip">광고 운영</span>
             <span class="timeline-chip">쿠팡 로켓배송</span>
+            <span class="timeline-chip">발주·라벨·패키지</span>
           </div>
         </div>
       </div>
@@ -657,16 +636,12 @@
         <div class="timeline-right">
           <p class="timeline-company">㈜ 키친마루</p>
           <p class="timeline-role">주방용품 쇼핑몰 온라인 총괄 팀장</p>
-          <p class="timeline-desc">자사몰 운영 전반 및 네이버 스마트스토어, 오픈마켓 다채널 관리. 상세페이지 기획·제작, 신규 카테고리 기획 등 커머스 전 영역 담당. 네이버 파워링크 비율을 줄이고 쇼핑검색광고에 가중치를 높이는 광고 믹스 전략으로 전체 광고비는 20% 상승했지만 스마트스토어 매출 200% 달성.</p>
-          <div class="achievement-box">
-            <p>📢 파워링크 → 쇼핑검색광고 믹스 전환 → 광고비 <strong>20% 증가</strong>로 스마트스토어 매출 <strong>200% 달성</strong></p>
-            <p>💡 광고 효율 재설계로 <strong>ROAS 대폭 개선</strong> · 비용 대비 매출 성장 극대화</p>
-          </div>
+          <p class="timeline-desc">자사몰 운영 전반 및 네이버 스마트스토어, 오픈마켓 다채널 관리. 상세페이지 기획·제작, 키워드 광고 운영, 신규 카테고리 기획 등 커머스 전 영역 담당.</p>
           <div class="timeline-chips">
             <span class="timeline-chip">온라인 총괄</span>
             <span class="timeline-chip">스마트스토어</span>
             <span class="timeline-chip">오픈마켓</span>
-            <span class="timeline-chip">쇼핑검색광고</span>
+            <span class="timeline-chip">키워드 광고</span>
           </div>
         </div>
       </div>
@@ -688,29 +663,6 @@
         </div>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-left">
-          <p class="timeline-period">2007 — 2017</p>
-          <span class="timeline-badge-green">약 10년</span>
-        </div>
-        <div class="timeline-right">
-          <p class="timeline-company">카페24 쇼핑몰 템플릿 디자이너</p>
-          <p class="timeline-role">프리랜서 (1인 독립 운영)</p>
-          <p class="timeline-desc">카페24 디자인센터 입점 쇼핑몰 템플릿 기획·제작·판매. HTML/CSS/jQuery 기반 PC·모바일 반응형 스킨 독립 개발. 패션·뷰티·식품 등 다양한 업종 커스터마이징 경험.</p>
-          <div class="freelance-box">
-            <p>📦 카페24 디자인센터 등록 템플릿 <strong>30종+</strong> 제작·판매</p>
-            <p>💵 연 매출 <strong>4,000~6,000만원</strong> 달성 · 10년 안정적 운영</p>
-          </div>
-          <div class="timeline-chips">
-            <span class="timeline-chip">카페24</span>
-            <span class="timeline-chip">HTML/CSS</span>
-            <span class="timeline-chip">jQuery</span>
-            <span class="timeline-chip">반응형</span>
-            <span class="timeline-chip">템플릿 판매</span>
-          </div>
-        </div>
-      </div>
-
     </div>
   </div>
 </section>
@@ -721,31 +673,6 @@
     <p class="section-label">Portfolio</p>
     <h2 class="section-title">주요 작업물</h2>
     <div class="portfolio-grid">
-
-      <a href="https://pocketworks.tistory.com/entry/%EA%B3%A8%ED%94%84%EC%9E%A5%EA%B0%91-%EC%83%81%EC%84%B8%ED%8E%98%EC%9D%B4%EC%A7%80" class="portfolio-card" target="_blank" rel="noopener">
-        <div class="portfolio-thumb" style="background: #f0f5ee;">
-          <div>
-            <div class="portfolio-thumb-icon">🧤</div>
-            <div class="portfolio-thumb-label">Detail Page · AI Case Study</div>
-          </div>
-        </div>
-        <div class="portfolio-body">
-          <p class="portfolio-cat">상세페이지 · AI 케이스 스터디</p>
-          <p class="portfolio-title">골프장갑 상세페이지</p>
-          <div class="portfolio-stat">
-            🎯 구매전환율 13.38% (6개월 평균) · 개편 전 대비 약 4배 상승<br>
-            📈 네이버 쇼핑 8페이지 → 5페이지 (광고비 동결)<br>
-            💰 광고 역마진 → 순마진 구조 전환
-          </div>
-          <p class="portfolio-desc">ChatGPT·Gemini·Claude 조합 AI 타겟 분석 및 스토리텔링 구조 개편. SEO 최적화로 검색 순위 개선.</p>
-          <div class="portfolio-chips">
-            <span class="portfolio-chip">Photoshop</span>
-            <span class="portfolio-chip">AI 카피</span>
-            <span class="portfolio-chip">SEO</span>
-            <span class="portfolio-chip">전환율 +4배</span>
-          </div>
-        </div>
-      </a>
 
       <a href="https://pocketworks.tistory.com/entry/%EC%A3%BC%EB%B0%A9%EC%9A%A9%ED%92%88-%EC%A0%84%EB%AC%B8-%EC%87%BC%ED%95%91%EB%AA%B0-%ED%82%A4%EC%B9%9C%EB%A7%88%EB%A3%A8" class="portfolio-card" target="_blank" rel="noopener">
         <div class="portfolio-thumb" style="background: #f0f4f8;">
@@ -762,6 +689,25 @@
             <span class="portfolio-chip">카페24</span>
             <span class="portfolio-chip">HTML/CSS</span>
             <span class="portfolio-chip">모바일 대응</span>
+          </div>
+        </div>
+      </a>
+
+      <a href="https://pocketworks.tistory.com/entry/%EA%B3%A8%ED%94%84%EC%9E%A5%EA%B0%91-%EC%83%81%EC%84%B8%ED%8E%98%EC%9D%B4%EC%A7%80" class="portfolio-card" target="_blank" rel="noopener">
+        <div class="portfolio-thumb" style="background: #f0f5ee;">
+          <div>
+            <div class="portfolio-thumb-icon">🧤</div>
+            <div class="portfolio-thumb-label">Detail Page</div>
+          </div>
+        </div>
+        <div class="portfolio-body">
+          <p class="portfolio-cat">상세페이지 · AI 카피라이팅</p>
+          <p class="portfolio-title">골프장갑 상세페이지</p>
+          <p class="portfolio-desc">AI 타겟 분석 및 광고 카피 적용. 상세페이지 개편 후 네이버 키워드 광고 전환율 약 40% 증가.</p>
+          <div class="portfolio-chips">
+            <span class="portfolio-chip">Photoshop</span>
+            <span class="portfolio-chip">AI 카피</span>
+            <span class="portfolio-chip">전환율 +40%</span>
           </div>
         </div>
       </a>
@@ -959,7 +905,7 @@
   <div class="container">
     <p class="section-label">Contact</p>
     <h2 class="section-title">함께 일해요</h2>
-    <p class="contact-info-sub">쇼핑몰 디자인·코딩부터 광고 운영까지, 커머스 실무 전반에 대해 편하게 연락 주세요.</p>
+    <p class="contact-info-sub" style="color:var(--gray-500); margin-bottom:2rem;">쇼핑몰 디자인·코딩부터 광고 운영까지, 커머스 실무 전반에 대해 편하게 연락 주세요.</p>
     <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap:1rem; max-width:860px;">
       <div class="contact-item">
         <div class="contact-item-icon">📞</div>
@@ -988,7 +934,7 @@
 
 <!-- FOOTER -->
 <footer>
-  <p>© 2025 이경호 · Pocketworks. <span>AI 활용 커머스 마케터 & 전환율 최적화 전문가</span></p>
+  <p>© 2025 이경호 · Pocketworks. <span>E-Commerce Designer & Marketer</span></p>
 </footer>
 
 <script>
